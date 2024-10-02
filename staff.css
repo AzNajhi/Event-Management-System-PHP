@@ -1,0 +1,103 @@
+.app-title {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+.app-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-form .card {
+    display: flex;
+    align-items: center;
+    width: 60%; 
+    min-width: 310px;
+    max-height: 560px;
+    overflow-y: scroll;
+    padding: 20px;
+}
+
+.app-form .card::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+
+.app-form .card::-webkit-scrollbar-thumb {
+    background: #bbbbbb;
+    border-radius: 6px;
+}
+
+.app-form .card::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+.app-form .card::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+.app-form table {
+    border-collapse: separate;
+    width: 60%;
+}
+
+.app-form label {
+    margin-bottom: 4px;
+}
+
+.app-form tr td:not(:last-child) {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px;
+}
+
+.app-form tr td:last-child {
+    border-bottom: 1px solid #ddd;
+    padding: 10px 0px 10px 10px;
+    width: 100px;
+}
+
+.app-form tr:last-child td {
+    border-bottom: none;
+}
+
+.input-group {
+    display: flex;
+    gap: 10px;
+}
+
+.button-group {
+    display: flex;
+    justify-content: flex-end;
+    gap: 5px;
+}
+
+.button-group button {
+    width: 40px;
+    height: 40px;
+}
+
+@media (max-width: 1024px) {
+    .app-form table {
+        width: 90%;
+    }
+}
+
+@media (max-width: 425px) {
+    .button-group {
+        flex-direction: column;
+        align-items: flex-end;
+    }
+    .app-form table {
+        width: 90%;
+    }
+    .app-form tr td:last-child {
+        width: 20px;
+    }
+}
+
+.bottom-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
